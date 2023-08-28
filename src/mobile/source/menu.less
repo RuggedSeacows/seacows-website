@@ -1,0 +1,104 @@
+.menubox {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #191C1A;
+  overflow-y: auto;
+  z-index: 999999;
+  .m-header {
+    height: 52px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  
+    img.logo {
+      width: 90px;
+      height: 24px;
+    }
+    img.menu {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .nvas {
+    margin-top: 20px;
+    li {
+      min-height: 60px;
+      box-sizing: border-box;
+      line-height: 60px;
+      padding-left: 20px;
+      color: rgba(255, 255, 255, 0.6);
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      border-bottom: 1px solid #444844;
+      svg {
+        font-size: 24px;
+        transform: translateY(6px);
+      }
+      a {
+        color: rgba(255, 255, 255, 0.6);
+      }
+      p {
+        display: inline-block;
+        margin-left: 8px;
+        margin-bottom: 0;
+      }
+    }
+    
+    .drapitem {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      i {
+        display: block;
+        width: 24px;
+        height: 24px;
+        margin-right: 16px;
+        background: url(/imgs/right-night.png) 0 0/cover no-repeat;
+      }
+      p {
+        margin-left: 0;
+      }
+    }
+    .active {
+      i {
+        transform: rotate(90deg);
+        transform-origin: center;
+      }
+    }
+    .noborder {
+      border: none;
+    }
+    .community {
+      .communityitem {
+        height: 54px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        p {
+          margin-left: 4px;
+          color: rgba(255, 255, 255, 0.6);
+          font-family: 'Roboto';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 19px;
+        }
+      }
+    }
+  }
+  button {
+    display: block;
+    width: 326px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 20px;
+    margin: 48px auto 0;
+  }
+}

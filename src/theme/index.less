@@ -1,0 +1,106 @@
+@import "~antd/dist/antd.less";
+@font-face{
+  font-family: Oswald;
+  src:url('/font/static/Oswald-Bold.ttf'),
+  url('/font/static/Oswald-Regular.ttf');
+  font-weight: 300;
+}
+@font-face{
+  font-family: 'Roboto';
+  src:url('/font/static/Roboto-Regular.ttf');
+  font-weight: 300;
+  font-style: normal;
+}
+body {
+  // background-color: #120D18;
+}
+// h2, h3, h4 {
+//   font-family: Oswald;
+// }
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  .container {
+    width: 100%;
+    max-width: 1244px;
+    min-height: calc(100vh - 180px);
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding: 0;
+}
+
+.scroll {
+  &::-webkit-scrollbar{
+    background-color: #080D37;
+    width: 6px;
+  }
+  &::-webkit-scrollbar-thumb{
+    background: @primary-color;
+    border-radius: 3px;
+    width: 6px;
+    height: 153px;
+  }
+}
+* {
+  font-family: 'Rubik' !important;
+}
+.pointer {
+  cursor: pointer;
+}
+
+.ant-dropdown-menu{
+  border: 1px solid rgba(0, 0, 0, 0.2) !important;
+  border-radius: 8px;
+  // 覆盖样式
+}
+
+.mydropdown {
+  
+  .ant-dropdown-menu{
+    // 覆盖样式
+    background-color: #45464F;
+    border-radius: 8px;
+    margin-top: 5px;
+    margin-left: 60px;
+    left: 0;
+  }
+  .ant-dropdown-menu-item, .ant-dropdown-menu-submenu-title {
+    background-color: #45464F !important;
+    color: rgba(255, 255, 255, 0.6) !important;
+    &:hover {
+      color: #fff !important;
+      // background-color: rgba(110, 95, 217, 0.2) !important;
+      svg {
+        opacity: 1 !important;
+      }
+    }
+  }
+}
+
+
+.inner {
+  transform-origin: center;
+}
+
+.btn {
+  background: linear-gradient(90deg, #01ECFA 0%, #0A56E1 100%);
+  backdrop-filter: blur(4px);
+  color: #fff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  &:hover{
+    background: linear-gradient(270deg, #084CC9 0%, #00D3DF 100%);
+    backdrop-filter: blur(4px);
+  }
+}

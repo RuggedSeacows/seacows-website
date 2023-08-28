@@ -1,0 +1,104 @@
+.menubox {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #191C1A;
+  overflow-y: auto;
+  z-index: 999999;
+  .m-header {
+    height: 13.866666666666665vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5.333333333333334vw;
+  
+    img.logo {
+      width: 24vw;
+      height: 6.4vw;
+    }
+    img.menu {
+      width: 6.4vw;
+      height: 6.4vw;
+    }
+  }
+
+  .nvas {
+    margin-top: 5.333333333333334vw;
+    li {
+      min-height: 16vw;
+      box-sizing: border-box;
+      line-height: 16vw;
+      padding-left: 5.333333333333334vw;
+      color: rgba(255, 255, 255, 0.6);
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 4.266666666666667vw;
+      border-bottom: 0.26666666666666666vw solid #444844;
+      svg {
+        font-size: 6.4vw;
+        transform: translateY(1.6vw);
+      }
+      a {
+        color: rgba(255, 255, 255, 0.6);
+      }
+      p {
+        display: inline-block;
+        margin-left: 2.1333333333333333vw;
+        margin-bottom: 0;
+      }
+    }
+    
+    .drapitem {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      i {
+        display: block;
+        width: 6.4vw;
+        height: 6.4vw;
+        margin-right: 4.266666666666667vw;
+        background: url(/imgs/right-night.png) 0 0/cover no-repeat;
+      }
+      p {
+        margin-left: 0;
+      }
+    }
+    .active {
+      i {
+        transform: rotate(90deg);
+        transform-origin: center;
+      }
+    }
+    .noborder {
+      border: none;
+    }
+    .community {
+      .communityitem {
+        height: 14.399999999999999vw;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        p {
+          margin-left: 1.0666666666666667vw;
+          color: rgba(255, 255, 255, 0.6);
+          font-family: 'Roboto';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 4.266666666666667vw;
+          line-height: 5.066666666666666vw;
+        }
+      }
+    }
+  }
+  button {
+    display: block;
+    width: 86.93333333333332vw;
+    height: 10.666666666666668vw;
+    font-size: 4.266666666666667vw;
+    border-radius: 5.333333333333334vw;
+    margin: 12.8vw auto 0;
+  }
+}

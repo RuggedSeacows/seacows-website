@@ -1,0 +1,75 @@
+.pcdialog {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.4);
+  .inner {
+    position: absolute;
+    // filter: drop-shadow(0px 18px 8px rgba(0, 0, 0, 0.04));
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 500px;
+    height: 300px;
+    margin: auto;
+    background: url(https://imagedelivery.net/j_uZAlMAZmPuTZ0wNVvYTA/c977567f-8e3c-4a63-9578-82a379982300/public) 0 0/100% 100% no-repeat;
+    background-color: rgba(0, 0, 0, .85);
+    backdrop-filter: blur(84px);
+    // background-color: linear-gradient(199.16deg, rgba(1, 236, 250, 0.1) 12.35%, rgba(1, 236, 250, 0) 95.56%);
+    // backdrop-filter: blur(84px);
+    color: #fff;
+    border-radius: 26px;
+    padding-top: 1px;
+    i {
+      position: absolute;
+      display: block;
+      right: 24px;
+      top: 24px;
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+      background: url(/v2/colse_Primary.png) 0 0/ cover no-repeat;
+      &:hover{
+        background: url(/v2/colse_hover.png) 0 0/cover no-repeat;
+      }
+    }
+    h2 {
+      width: 95%;
+      color: #fff;
+      padding-left: 26px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 38px;
+      margin-top: 74px;
+      text-align: left;
+    }
+    p{
+      margin: 0;
+      width: 70%;
+      padding-left: 26px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 28px;
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    .btn {
+      width: 156px;
+      height: 48px;
+      border-radius: 8px;
+      font-size: 16px;
+      margin: 48px 0 0 26px;
+      img {
+        width: 24px;
+        height: 24px;
+        margin-right: 2px;
+      }
+    }
+  }
+}
